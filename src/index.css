@@ -1,0 +1,68 @@
+body {
+  margin: 50px;
+  padding: 0;
+  font-family: sans-serif; }
+
+.Post {
+  height: 800px;
+  border-style: solid;
+  border-color: #e5e6e9;
+  border-radius: 3px;
+  border-top: 3;
+  border-right: 3;
+  border-bottom: 3;
+  border-left: 3;
+  width: 474px;
+  position: absolute;
+  display: block;
+  font-size: 12px; }
+
+.Post-info {
+  border-style: solid;
+  border-color: #e5e6e9;
+  border-radius: 3px;
+  border-top: 3;
+  border-right: 3;
+  border-bottom: 3;
+  border-left: 3;
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-right: 5px;
+  postion: relative;
+  top: 5px;
+  height: 46px;
+  width: 450px; }
+
+.Profile {
+  width: 428px;
+  float: left;
+  display: block; }
+  .Profile .Profile_Pic {
+    width: 40px;
+    float: left; }
+  .Profile .AuthorInfo-name, .Profile .Post-date {
+    font-weight: bold;
+    padding-right: 24px;
+    padding-left: 45px;
+    margin-bottom: 2px; }
+  .Profile .Post-date {
+    margin-top: 2px;
+    font-weight: normal;
+    color: #90949c; }
+
+.Content {
+  border-style: solid;
+  border-color: #e5e6e9;
+  border-radius: 3px;
+  border-top: 3;
+  border-right: 3;
+  border-bottom: 3;
+  border-left: 3;
+  margin-top: 7px;
+  height: 533.3333333333px;
+  width: 450px;
+  margin-left: 10px;
+  margin-right: 5px;
+  display: block; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,79 @@
+// %border-post{
+//   border-style: solid;
+//   border-color: #e5e6e9;
+//   border-radius:3px;
+// }
+
+@mixin border-post($top, $right, $bottom, $left, $style: solid, $color: #e5e6e9, $radius: 3px) { //This order MATTERS
+  border: {
+    style: $style;
+    color: $color;
+    radius: $radius;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+}
+
+$width: 474px;
+$height: 800px;
+
+body {
+  margin: 50px;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.Post{
+  height: $height;
+  @include border-post(3,3,3,3);
+  width: $width;
+  position:absolute;
+  display: block;
+  font-size: 12px;
+}
+
+.Post-info{
+    @include border-post(3,3,3,3, /* $color:#fff */); //Remember to make color #FFF
+    margin-top: 12px;
+    margin-left:10px;
+    margin-right:5px;
+    postion: relative;
+    top:5px;
+    height:46px;
+    width: 450px;
+  }
+
+.Profile{
+  width:428px;
+  float:left;
+  display:block;
+  .Profile_Pic{
+    width:40px;
+    float:left;
+  }
+  .AuthorInfo-name{
+    font-weight: bold;
+    padding-right: 24px;
+    padding-left:45px;
+    margin-bottom: 2px;
+  }
+  .Post-date{
+    margin-top: 2px;
+    @extend .Post-date;
+    @extend .AuthorInfo-name;
+    font-weight: normal;
+    color: #90949c;
+  }
+}
+
+.Content{
+  @include border-post(3,3,3,3, /* $color:#fff */); //Remember to make color #FFF
+  margin-top:7px;
+  height: $height / 1.5;
+  width: 450px;
+  margin-left:10px;
+  margin-right:5px;
+  display: block;
+}
