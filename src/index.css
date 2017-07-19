@@ -73,6 +73,23 @@ body {
     max-height: 426.5px;
     margin-top: 10px;
     background-color: blue; }
+    .Content .Main .Main_Pic, .Reaction-Bar .Main .Main_Pic {
+      max-width: 450px;
+      min-height: 266.6666666667px;
+      max-height: 320px;
+      margin-bottom: 0px; }
+    .Content .Main .Main-Title, .Reaction-Bar .Main .Main-Title {
+      border-style: solid;
+      border-color: #e5e6e9;
+      border-radius: 3px;
+      border-top: 1;
+      border-right: 1;
+      border-bottom: 1;
+      border-left: 1;
+      font-weight: bold;
+      color: #000;
+      position: relative;
+      bottom: 0px; }
 
 .Reaction-Bar {
   height: 160px;

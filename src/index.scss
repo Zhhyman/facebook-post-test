@@ -82,10 +82,23 @@ body {
     height: auto;
   }
   .Main{
-    height:$height;
+    height:$height; //Subject to change, depending on image and content
     max-height: 426.5px;
     margin-top:10px;
-    background-color: blue;
+    background-color: blue; //Remove this when finished!
+    .Main_Pic{
+      max-width: 450px;
+      min-height: $height/3;
+      max-height: $height/2.5; //Unsure about height, subject to change.
+      margin-bottom: 0px;
+    }
+    .Main-Title{
+      @include border-post(1,1,1,1);
+      font-weight: bold;
+      color:#000;
+      position:relative;
+      bottom:0px;
+    }
   }
 }
 
