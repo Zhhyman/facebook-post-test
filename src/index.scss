@@ -58,7 +58,7 @@ body {
 }
 
 .Post-info{
-    @include border-post(3,3,3,3, /* $color:#fff */); //Remember to make color #FFF
+    @include border-post(3,3,3,3, $color:#fff); //Remember to make color #FFF
     margin-top: 12px;
     margin-left:10px;
     margin-right:5px;
@@ -92,7 +92,7 @@ body {
 }
 
 .Content{
-  @include border-post(3,3,3,3, /* $color:#fff */); //Remember to make color #FFF
+  @include border-post(3,3,3,3, $color:#fff); //Remember to make color #FFF
   margin-top:7px;
   height: $height / 1.5;
   width: 450px;
@@ -106,7 +106,7 @@ body {
   }
   .Main{
     height:$height; //Subject to change, depending on image and content
-    max-height: 426.5px;
+    max-height: 380.5px;  //426.5px;
     margin-top:10px;
     &:hover{
       @include link($box-shadow: (2px 0 2px -2px #b2b9c9), $text-decoration: none, $color: none);
@@ -164,8 +164,15 @@ body {
   }
 }
 
+.lcs{
+  padding-top: 10px;
+  @include border-post(3,0,0,0);
+  padding-bottom: 20px;
+}
+
 .Reaction-Bar{
   @extend .Content;
   height: $height / 5;
   margin-top: 15px;
+  background-color: #f6f7f9;
 }

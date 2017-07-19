@@ -20,7 +20,7 @@ body {
 
 .Post-info {
   border-style: solid;
-  border-color: #e5e6e9;
+  border-color: #fff;
   border-radius: 3px;
   border-top: 3;
   border-right: 3;
@@ -54,7 +54,7 @@ body {
 
 .Content, .Reaction-Bar {
   border-style: solid;
-  border-color: #e5e6e9;
+  border-color: #fff;
   border-radius: 3px;
   border-top: 3;
   border-right: 3;
@@ -73,7 +73,7 @@ body {
     height: auto; }
   .Content .Main, .Reaction-Bar .Main {
     height: 800px;
-    max-height: 426.5px;
+    max-height: 380.5px;
     margin-top: 10px; }
     .Content .Main:hover, .Reaction-Bar .Main:hover {
       text-decoration: none;
@@ -145,8 +145,21 @@ body {
         -o-transform: cubic-bezier(0.08, 0.52, 0.52, 1) background-color;
         background-color: #ced0d4; }
 
+.lcs {
+  padding-top: 10px;
+  border-style: solid;
+  border-color: #e5e6e9;
+  border-radius: 3px;
+  border-top: 3;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-width: 1px;
+  padding-bottom: 20px; }
+
 .Reaction-Bar {
   height: 160px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  background-color: #f6f7f9; }
 
 /*# sourceMappingURL=index.css.map */

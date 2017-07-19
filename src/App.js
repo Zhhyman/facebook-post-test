@@ -43,6 +43,9 @@ export default class Post extends Component {
             </div>
             </div>
           </div>
+          <div className="lcs">
+          Like, Comment, and Share go in here.
+          </div>
         </div>
         <div className="Reaction-Bar">
         </div>
