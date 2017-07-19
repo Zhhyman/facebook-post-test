@@ -11,6 +11,21 @@
   box-shadow: $box-shadow;
 }
 
+@mixin transition($time: 200ms){ // $ is used for dynamic parameters
+  transition: $time;
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -o-transition: $time;
+}
+
+@mixin transform($transformation, $background-color, $shadow) {
+  transform: $transformation;
+  -webkit-transform: $transformation;
+  -moz-transform: $transformation;
+  -ms-transform: $transformation;
+  -o-transform: $transformation;
+}
+
 @mixin border-post($top, $right, $bottom, $left, $width: 1px, $style: solid, $color: #e5e6e9, $radius: 3px) { //This order MATTERS
   border: {
     style: $style;
@@ -126,6 +141,25 @@ body {
     }
     .Subtitle-Link{
       font-size: 12px;
+    }
+    .btn{
+      font-size: 12px;
+      float: right;
+      width:83.75px;
+      height:24px;
+      text-align: center;
+      line-height: 22px;
+      vertical-align: center;
+      @include border-post(3,3,3,3);
+      @include transition;
+      background-color: #f6f7f9;
+      display:inline-block;
+      margin: -10px 10px;
+      padding: 0px 8px;
+      &:hover{
+        @include transform(cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1));
+        background-color: #ced0d4;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
-import './Profile-info.js';
+import './react-bootstrap/lib/Button.js';
 
 
 export default class Post extends Component {
@@ -38,7 +38,9 @@ export default class Post extends Component {
             <a className="Subtitle-Link"> {/* To HERE */}
               Hello!
             </a>
-
+            <div className="btn">
+              Learn More
+            </div>
             </div>
           </div>
         </div>

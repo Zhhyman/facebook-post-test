@@ -113,6 +113,37 @@ body {
       font-size: 12px; }
     .Content .Main .Subtitle-Link, .Reaction-Bar .Main .Subtitle-Link {
       font-size: 12px; }
+    .Content .Main .btn, .Reaction-Bar .Main .btn {
+      font-size: 12px;
+      float: right;
+      width: 83.75px;
+      height: 24px;
+      text-align: center;
+      line-height: 22px;
+      vertical-align: center;
+      border-style: solid;
+      border-color: #e5e6e9;
+      border-radius: 3px;
+      border-top: 3;
+      border-right: 3;
+      border-bottom: 3;
+      border-left: 3;
+      border-width: 1px;
+      transition: 200ms;
+      -webkit-transition: 200ms;
+      -moz-transition: 200ms;
+      -o-transition: 200ms;
+      background-color: #f6f7f9;
+      display: inline-block;
+      margin: -10px 10px;
+      padding: 0px 8px; }
+      .Content .Main .btn:hover, .Reaction-Bar .Main .btn:hover {
+        transform: cubic-bezier(0.08, 0.52, 0.52, 1) background-color;
+        -webkit-transform: cubic-bezier(0.08, 0.52, 0.52, 1) background-color;
+        -moz-transform: cubic-bezier(0.08, 0.52, 0.52, 1) background-color;
+        -ms-transform: cubic-bezier(0.08, 0.52, 0.52, 1) background-color;
+        -o-transform: cubic-bezier(0.08, 0.52, 0.52, 1) background-color;
+        background-color: #ced0d4; }
 
 .Reaction-Bar {
   height: 160px;
