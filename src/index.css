@@ -12,6 +12,7 @@ body {
   border-right: 3;
   border-bottom: 3;
   border-left: 3;
+  border-width: 1px;
   width: 474px;
   position: absolute;
   display: block;
@@ -25,6 +26,7 @@ body {
   border-right: 3;
   border-bottom: 3;
   border-left: 3;
+  border-width: 1px;
   margin-top: 12px;
   margin-left: 10px;
   margin-right: 5px;
@@ -58,6 +60,7 @@ body {
   border-right: 3;
   border-bottom: 3;
   border-left: 3;
+  border-width: 1px;
   margin-top: 7px;
   height: 533.3333333333px;
   width: 450px;
@@ -82,14 +85,22 @@ body {
       border-style: solid;
       border-color: #e5e6e9;
       border-radius: 3px;
-      border-top: 1;
-      border-right: 1;
-      border-bottom: 1;
-      border-left: 1;
-      font-weight: bold;
+      border-top: 3;
+      border-right: 3;
+      border-bottom: 3;
+      border-left: 3;
+      border-width: 1px;
+      font-weight: 500;
+      line-height: 22px;
+      margin-bottom: 5px;
+      max-height: 110px;
+      font-size: 18x;
+      font-family: Georgia, serif;
       color: #000;
       position: relative;
-      bottom: 0px; }
+      padding-left: 5px;
+      bottom: 0px;
+      word-wrap: break-word; }
 
 .Reaction-Bar {
   height: 160px;

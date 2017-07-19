@@ -32,6 +32,9 @@ export default class Post extends Component {
             />
             <div className="Main-Title">
               <h3>Your title here</h3>
+            <div className="Main-Subtitle">
+              <h4>Hellooo!</h4>
+            </div>
             </div>
           </div>
         </div>
