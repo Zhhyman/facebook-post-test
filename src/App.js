@@ -24,7 +24,7 @@ export default class Post extends Component {
         <div className="Content">
           <div className="Content-Desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices, elit in laoreet suscipit, tortor lectus aliquam leo, non lacinia turpis orci vel ligula. Donec mi elit, bibendum vel arcu vulputate, posuere ultrices ipsum. Suspendisse aliquet elementum nunc ut ornare. Quisque et rutrum purus. Cras eget lectus ac ex ullamcorper tempor nec a turpis. In hac habitasse platea dictumst.
-          </div>
+          </div> {/* Would like to make this into a link, but don't know how.  From HERE */}
           <div className="Main">
             <img className="Main_Pic"
               src="https://scontent.xx.fbcdn.net/v/t1.0-9/14449792_10157433035660048_5027347782728027455_n.jpg?oh=e6f4009cfb3196bc195e043ff44c7bdc&oe=5A0FD645"
@@ -33,8 +33,12 @@ export default class Post extends Component {
             <div className="Main-Title">
               <h3>Your title here</h3>
             <div className="Main-Subtitle">
-              <h4>Hellooo!</h4>
+              I am a subtitle!
             </div>
+            <a className="Subtitle-Link"> {/* To HERE */}
+              Hello!
+            </a>
+
             </div>
           </div>
         </div>

@@ -4,6 +4,13 @@
 //   border-radius:3px;
 // }
 
+@mixin link($box-shadow: 10px 10px 5px #888888, $text-decoration: underline, $color: blue, $cursor: pointer) {
+  text-decoration: $text-decoration;
+  color: $color;
+  cursor: $cursor;
+  box-shadow: $box-shadow;
+}
+
 @mixin border-post($top, $right, $bottom, $left, $width: 1px, $style: solid, $color: #e5e6e9, $radius: 3px) { //This order MATTERS
   border: {
     style: $style;
@@ -86,7 +93,10 @@ body {
     height:$height; //Subject to change, depending on image and content
     max-height: 426.5px;
     margin-top:10px;
-    background-color: blue; //Remove this when finished!
+    &:hover{
+      @include link($box-shadow: (2px 0 2px -2px #b2b9c9), $text-decoration: none, $color: none);
+    }
+    //background-color: blue; //Remove this when finished!
     .Main_Pic{
       max-width: 450px;
       min-height: $height/3;
@@ -99,7 +109,8 @@ body {
       line-height: 22px;
       margin-bottom: 5px;
       max-height: 110px;
-      font-size: 18x;
+      padding-top: 0px;
+      font-size: 18px;
       font-family: Georgia, serif;
       color:#000;
       position:relative;
@@ -108,7 +119,13 @@ body {
       word-wrap: break-word;
     }
     .Main-Subtitle{
-      
+      margin-top: -20px;
+      padding-bottom:20px;
+      font-style: normal;
+      font-size: 12px;
+    }
+    .Subtitle-Link{
+      font-size: 12px;
     }
   }
 }

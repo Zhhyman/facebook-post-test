@@ -74,8 +74,12 @@ body {
   .Content .Main, .Reaction-Bar .Main {
     height: 800px;
     max-height: 426.5px;
-    margin-top: 10px;
-    background-color: blue; }
+    margin-top: 10px; }
+    .Content .Main:hover, .Reaction-Bar .Main:hover {
+      text-decoration: none;
+      color: none;
+      cursor: pointer;
+      box-shadow: 2px 0 2px -2px #b2b9c9; }
     .Content .Main .Main_Pic, .Reaction-Bar .Main .Main_Pic {
       max-width: 450px;
       min-height: 266.6666666667px;
@@ -94,13 +98,21 @@ body {
       line-height: 22px;
       margin-bottom: 5px;
       max-height: 110px;
-      font-size: 18x;
+      padding-top: 0px;
+      font-size: 18px;
       font-family: Georgia, serif;
       color: #000;
       position: relative;
       padding-left: 5px;
       bottom: 0px;
       word-wrap: break-word; }
+    .Content .Main .Main-Subtitle, .Reaction-Bar .Main .Main-Subtitle {
+      margin-top: -20px;
+      padding-bottom: 20px;
+      font-style: normal;
+      font-size: 12px; }
+    .Content .Main .Subtitle-Link, .Reaction-Bar .Main .Subtitle-Link {
+      font-size: 12px; }
 
 .Reaction-Bar {
   height: 160px;
