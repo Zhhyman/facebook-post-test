@@ -76,6 +76,17 @@ body {
   margin-left:10px;
   margin-right:5px;
   display: block;
+  .Content-Desc{
+    font-size: 14px;
+    word-wrap: break-word;
+    height: auto;
+  }
+  .Main{
+    height:$height;
+    max-height: 426.5px;
+    margin-top:10px;
+    background-color: blue;
+  }
 }
 
 .Reaction-Bar{

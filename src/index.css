@@ -64,6 +64,15 @@ body {
   margin-left: 10px;
   margin-right: 5px;
   display: block; }
+  .Content .Content-Desc, .Reaction-Bar .Content-Desc {
+    font-size: 14px;
+    word-wrap: break-word;
+    height: auto; }
+  .Content .Main, .Reaction-Bar .Main {
+    height: 800px;
+    max-height: 426.5px;
+    margin-top: 10px;
+    background-color: blue; }
 
 .Reaction-Bar {
   height: 160px;

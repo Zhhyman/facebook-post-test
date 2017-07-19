@@ -22,9 +22,14 @@ export default class Post extends Component {
           </div>
         </div>
         <div className="Content">
+          <div className="Content-Desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices, elit in laoreet suscipit, tortor lectus aliquam leo, non lacinia turpis orci vel ligula. Donec mi elit, bibendum vel arcu vulputate, posuere ultrices ipsum. Suspendisse aliquet elementum nunc ut ornare. Quisque et rutrum purus. Cras eget lectus ac ex ullamcorper tempor nec a turpis. In hac habitasse platea dictumst.
+          </div>
+          <div className="Main">
+            
+          </div>
         </div>
         <div className="Reaction-Bar">
-          
         </div>
       </div>
     );
