@@ -77,3 +77,9 @@ body {
   margin-right:5px;
   display: block;
 }
+
+.Reaction-Bar{
+  @extend .Content;
+  height: $height / 5;
+  margin-top: 15px;
+}

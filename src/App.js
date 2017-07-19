@@ -22,8 +22,9 @@ export default class Post extends Component {
           </div>
         </div>
         <div className="Content">
+        </div>
+        <div className="Reaction-Bar">
           
-
         </div>
       </div>
     );
