@@ -228,8 +228,11 @@ body {
 form{
   height:32px;
   input{
-    width:200px !important;
+    width:375px;
     height: 28px;
+    margin-left: 10px;
+    padding-left: 5px;
+    font-size: 12px;
   }
 }
 

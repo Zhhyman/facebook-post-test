@@ -72,7 +72,7 @@ export default class Post extends Component {
                     />
                   <div className="Comment-text">
                     <form>
-                      <input type="text" placeholder="Comment"></input>
+                      <input type="text" placeholder="Write a comment..."></input>
                     </form>
                   </div>
               </div>
