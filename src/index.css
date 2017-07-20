@@ -18,7 +18,7 @@ body {
   display: block;
   font-size: 12px; }
 
-.Post-info {
+.Post-info, .Reaction-Bar .Comment-Wrapper {
   border-style: solid;
   border-color: #fff;
   border-radius: 3px;
@@ -161,5 +161,56 @@ body {
   height: 160px;
   margin-top: 15px;
   background-color: #f6f7f9; }
+  .Reaction-Bar .Comment-Wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+    border-style: solid;
+    border-color: #e5e6e9;
+    border-radius: 3px;
+    border-top: 3;
+    border-right: 0;
+    border-bottom: 3;
+    border-left: 3;
+    border-width: 1px;
+    text-decoration: underline;
+    color: #365899;
+    cursor: default;
+    box-shadow: none; }
+
+.Profile {
+  width: 428px;
+  float: left;
+  display: block; }
+  .Profile .Profile_Pic {
+    width: 40px;
+    float: left; }
+  .Profile .AuthorInfo-name, .Profile .Post-date {
+    font-weight: bold;
+    padding-right: 24px;
+    padding-left: 45px;
+    margin-bottom: 2px;
+    width: 150px; }
+    .Profile .AuthorInfo-name:hover, .Profile .Post-date:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+  .Profile .Comment {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    position: absolute;
+    right: 175px;
+    cursor: default;
+    word-wrap: break-word; }
+
+.Post-date, .Profile .Post-date {
+  margin-top: 2px;
+  font-weight: normal;
+  color: #90949c;
+  width: 150px auto;
+  max-width: 150px; }
+
+.User-comment .Profile {
+  margin-top: 15px; }
 
 /*# sourceMappingURL=index.css.map */

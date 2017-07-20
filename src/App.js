@@ -48,8 +48,37 @@ export default class Post extends Component {
           </div>
         </div>
         <div className="Reaction-Bar">
+          <div className="Comment-Wrapper">
+            <div className="Profile">
+              <img className="Profile_Pic"
+                src="https://scontent.xx.fbcdn.net/v/t1.0-1/14470438_10157451332295048_6937427168734769921_n.jpg?oh=e6a98c9cbcc42368d39533f751f1817f&oe=59FF5705"
+                alt="user profile pic"
+              />
+              <div className="AuthorInfo-name">
+                YourName Here
+                <a className="Comment">
+                  Oh Wow!  What a comment!
+                </a>
+              </div>
+              <div className="Post-date">
+                June 19 at 10:36am
+              </div>
+
+              <div className="User-comment">
+                <div className="Profile">
+                  <img className="Profile_Pic"
+                    src="https://scontent.xx.fbcdn.net/v/t1.0-1/14470438_10157451332295048_6937427168734769921_n.jpg?oh=e6a98c9cbcc42368d39533f751f1817f&oe=59FF5705"
+                    alt="user profile pic"
+                    />
+                  <div className="Comment-text">
+                    
+                  </div>
+              </div>
+              </div>
         </div>
       </div>
+    </div>
+  </div>
     );
   }
 }

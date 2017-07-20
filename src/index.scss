@@ -175,4 +175,65 @@ body {
   height: $height / 5;
   margin-top: 15px;
   background-color: #f6f7f9;
+  .Comment-Wrapper{
+    @extend .Post-info;
+    margin-left:0px;
+    margin-right:0px;
+    @include border-post(3,0,3,3);
+    @include link($box-shadow: none, $color: #365899, $cursor: default);
+  }
+}
+.Profile{
+      width:428px;
+      float:left;
+      display:block;
+  .Profile_Pic{
+        width:40px;
+        float:left;
+      }
+  .AuthorInfo-name{
+        font-weight: bold;
+        padding-right: 24px;
+        padding-left:45px;
+        margin-bottom: 2px;
+        width: 150px;
+        &:hover{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+.Comment{
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    position: absolute;
+    right:175px;
+    cursor:default;
+    word-wrap: break-word;
+  }
+}
+
+.Post-date{
+    margin-top: 2px;
+    @extend .Post-date;
+    @extend .AuthorInfo-name;
+    font-weight: normal;
+    color: #90949c;
+    width:150px auto;
+    max-width: 150px;
+  }
+
+
+
+.User-comment{
+  .Profile{
+    margin-top: 15px;
+  }
+  .Profile_Pic{
+
+  }
+  .Comment-text{
+
+  }
 }
