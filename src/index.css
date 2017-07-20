@@ -182,12 +182,13 @@ body {
   float: left;
   display: block; }
   .Profile .Profile_Pic {
-    width: 40px;
+    width: 32px;
+    height: 32px;
     float: left; }
   .Profile .AuthorInfo-name, .Profile .Post-date {
     font-weight: bold;
     padding-right: 24px;
-    padding-left: 45px;
+    padding-left: 40px;
     margin-bottom: 2px;
     width: 150px; }
     .Profile .AuthorInfo-name:hover, .Profile .Post-date:hover {
@@ -199,7 +200,7 @@ body {
     display: inline-block;
     font-weight: normal;
     position: absolute;
-    right: 175px;
+    right: 181px;
     cursor: default;
     word-wrap: break-word; }
 
@@ -210,7 +211,16 @@ body {
   width: 150px auto;
   max-width: 150px; }
 
+form {
+  height: 32px; }
+  form input {
+    width: 200px !important;
+    height: 28px; }
+
 .User-comment .Profile {
   margin-top: 15px; }
+.User-comment .Profile_Pic {
+  width: 32px;
+  height: 32px; }
 
 /*# sourceMappingURL=index.css.map */

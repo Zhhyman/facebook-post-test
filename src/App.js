@@ -71,7 +71,9 @@ export default class Post extends Component {
                     alt="user profile pic"
                     />
                   <div className="Comment-text">
-                    
+                    <form>
+                      <input type="text" placeholder="Comment"></input>
+                    </form>
                   </div>
               </div>
               </div>
