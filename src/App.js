@@ -3,13 +3,20 @@ import './index.css';
 import Time from 'react-time';
 import Moment from 'react-moment';
 import 'moment-timezone';
+import globe from './globe.png'
 
 export default class Post extends Component {
   render() {
-    let now = new Date();
+    let now = new Date("2018");
     let wasDate = new Date("Mon June 19 2017 10:36")
     let postedDate = new Date("Thu Apr 20 2017 10:55:59 UTC+0500");
     let dateToFormat = new Date('1976-04-19T12:59-0500');
+
+    if (now < new Date("2017")) {
+      return (
+        <Moment date={'June 1 2017'} format="MMMM d YYYY" />
+      )
+    }
 
     return (
       <div className="Post">
@@ -23,13 +30,13 @@ export default class Post extends Component {
               YourName Here
             </div>
             <div className="Post-date">
-               <Moment date={'June 1 2017'} format="MMMM d" />
+               <Moment date={'June 8 2017'} format="MMMM d" /> <img src={globe} width="12px" height="12px" />
             </div>
           </div>
         </div>
         <div className="Content">
           <div className="Content-Desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices, elit in laoreet suscipit, tortor lectus aliquam leo, non lacinia turpis orci vel ligula. Donec mi elit, bibendum vel arcu vulputate, posuere ultrices ipsum. Suspendisse aliquet elementum nunc ut ornare. Quisque et rutrum purus. Cras eget lectus ac ex ullamcorper tempor nec a turpis. In hac habitasse platea dictumst.
+            Torem apsum bolor lit emet, ionsectetur sdipiscing tlit. ahasellus bltrices, llit en laoreet suscipit, tortor lectus aliquam leo, non lacinia turpis orci vel ligula. Donec mi elit, bibendum vel arcu vulputate, posuere ultrices ipsum. Suspendisse aliquet elementum nunc ut ornare. Quisque et rutrum purus. Cras eget lectus ac ex ullamcorper tempor nec a turpis. In hac habitasse platea dictumst.
           </div> {/* Would like to make this into a link, but don't know how.  From HERE */}
           <div className="Main">
             <img className="Main_Pic"
@@ -80,7 +87,7 @@ export default class Post extends Component {
                 </a>
               </div>
               <div className="Post-date">
-                <Moment date={'June 1 2017 03:11'} format="MMMM d a HH:MMa" /> 
+                <Moment date={'June 1 2017 03:11'} format="MMMM d [at]  H:MMa" />
               </div>
 
 
