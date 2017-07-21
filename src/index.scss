@@ -59,7 +59,7 @@ body {
 
 .Post-info{
     @include border-post(3,3,3,3, $color:#fff); //Remember to make color #FFF
-    margin-top: 12px;
+    margin-top: -12px;
     margin-left:10px;
     margin-right:5px;
     postion: relative;
@@ -93,7 +93,7 @@ body {
 
 .Content{
   @include border-post(3,3,3,3, $color:#fff); //Remember to make color #FFF
-  margin-top:7px;
+  margin-top:11px;
   height: $height / 1.5;
   width: 450px;
   margin-left:10px;
@@ -181,12 +181,15 @@ body {
     margin-right:0px;
     @include border-post(3,0,3,3);
     @include link($box-shadow: none, $color: #365899, $cursor: default);
+    margin-top:8px;
   }
 }
+
 .Profile{
       width:428px;
       float:left;
       display:block;
+      margin-top: 20px;
   .Profile_Pic{
         width:32px;
         height:32px;

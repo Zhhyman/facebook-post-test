@@ -27,7 +27,7 @@ body {
   border-bottom: 3;
   border-left: 3;
   border-width: 1px;
-  margin-top: 12px;
+  margin-top: -12px;
   margin-left: 10px;
   margin-right: 5px;
   postion: relative;
@@ -61,7 +61,7 @@ body {
   border-bottom: 3;
   border-left: 3;
   border-width: 1px;
-  margin-top: 7px;
+  margin-top: 11px;
   height: 533.3333333333px;
   width: 450px;
   margin-left: 10px;
@@ -175,12 +175,14 @@ body {
     text-decoration: underline;
     color: #365899;
     cursor: default;
-    box-shadow: none; }
+    box-shadow: none;
+    margin-top: 8px; }
 
 .Profile {
   width: 428px;
   float: left;
-  display: block; }
+  display: block;
+  margin-top: 20px; }
   .Profile .Profile_Pic {
     width: 32px;
     height: 32px;

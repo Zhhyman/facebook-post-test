@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import './index.css';
-import './react-bootstrap/lib/Button.js';
-
+import Time from 'react-time';
+import Moment from 'react-moment';
+import 'moment-timezone';
 
 export default class Post extends Component {
   render() {
+    let now = new Date();
+    let wasDate = new Date("Mon June 19 2017 10:36")
+    let postedDate = new Date("Thu Apr 20 2017 10:55:59 UTC+0500");
+    let dateToFormat = new Date('1976-04-19T12:59-0500');
+
     return (
       <div className="Post">
         <div className="Post-info">
@@ -17,7 +23,7 @@ export default class Post extends Component {
               YourName Here
             </div>
             <div className="Post-date">
-              June 19 at 10:36am
+               <Moment date={'June 1 2017'} format="MMMM d" />
             </div>
           </div>
         </div>
@@ -48,6 +54,19 @@ export default class Post extends Component {
           </div>
         </div>
         <div className="Reaction-Bar">
+        <div className="User-comment">
+          <div className="Profile">
+            <img className="Profile_Pic"
+              src="https://scontent.xx.fbcdn.net/v/t1.0-1/14470438_10157451332295048_6937427168734769921_n.jpg?oh=e6a98c9cbcc42368d39533f751f1817f&oe=59FF5705"
+              alt="user profile pic"
+              />
+            <div className="Comment-text">
+              <form>
+                <input type="text" placeholder="Write a comment..."></input>
+              </form>
+            </div>
+        </div>
+        </div>
           <div className="Comment-Wrapper">
             <div className="Profile">
               <img className="Profile_Pic"
@@ -61,22 +80,10 @@ export default class Post extends Component {
                 </a>
               </div>
               <div className="Post-date">
-                June 19 at 10:36am
+                <Moment date={'June 1 2017 03:11'} format="MMMM d a HH:MMa" /> 
               </div>
 
-              <div className="User-comment">
-                <div className="Profile">
-                  <img className="Profile_Pic"
-                    src="https://scontent.xx.fbcdn.net/v/t1.0-1/14470438_10157451332295048_6937427168734769921_n.jpg?oh=e6a98c9cbcc42368d39533f751f1817f&oe=59FF5705"
-                    alt="user profile pic"
-                    />
-                  <div className="Comment-text">
-                    <form>
-                      <input type="text" placeholder="Write a comment..."></input>
-                    </form>
-                  </div>
-              </div>
-              </div>
+
         </div>
       </div>
     </div>
